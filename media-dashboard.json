@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 0,
   "links": [],
   "panels": [
     {
@@ -40,7 +39,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -110,7 +109,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -127,7 +126,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -206,7 +205,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -223,7 +222,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -339,7 +338,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(prowlarr_system_health_issues{instance=~\"${prowlarr_instance}\"})",
@@ -351,7 +350,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(prowlarr_indexer_enabled_total{instance=~\"${prowlarr_instance}\"})",
@@ -363,7 +362,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(prowlarr_indexer_total{instance=~\"${prowlarr_instance}\"} - prowlarr_indexer_enabled_total{instance=~\"${prowlarr_instance}\"})",
@@ -379,7 +378,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -466,7 +465,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -480,7 +479,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -494,7 +493,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -512,7 +511,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -615,7 +614,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -629,7 +628,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -647,7 +646,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -731,7 +730,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "min(prowlarr_indexer_vip_expires_in_seconds)",
@@ -747,7 +746,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -810,7 +809,7 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 5
+            "y": 159
           },
           "id": 44,
           "options": {
@@ -831,7 +830,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(prowlarr_indexer_average_response_time_ms{instance=~\"${prowlarr_instance}\"}) by (indexer)",
@@ -846,7 +845,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -909,7 +908,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 5
+            "y": 159
           },
           "id": 45,
           "options": {
@@ -930,7 +929,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(increase(prowlarr_user_agent_queries_total{instance=~\"${prowlarr_instance}\"}[$__rate_interval])) by (user_agent)",
@@ -945,7 +944,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -967,7 +966,7 @@
             "h": 9,
             "w": 6,
             "x": 0,
-            "y": 14
+            "y": 168
           },
           "id": 29,
           "options": {
@@ -999,7 +998,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1016,7 +1015,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1038,7 +1037,7 @@
             "h": 9,
             "w": 6,
             "x": 6,
-            "y": 14
+            "y": 168
           },
           "id": 33,
           "options": {
@@ -1067,7 +1066,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1084,7 +1083,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1106,7 +1105,7 @@
             "h": 9,
             "w": 6,
             "x": 12,
-            "y": 14
+            "y": 168
           },
           "id": 30,
           "options": {
@@ -1138,7 +1137,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1155,7 +1154,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1177,7 +1176,7 @@
             "h": 9,
             "w": 6,
             "x": 18,
-            "y": 14
+            "y": 168
           },
           "id": 32,
           "options": {
@@ -1206,7 +1205,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1223,7 +1222,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1320,7 +1319,7 @@
             "h": 7,
             "w": 12,
             "x": 0,
-            "y": 23
+            "y": 177
           },
           "id": 41,
           "options": {
@@ -1339,7 +1338,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1354,7 +1353,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1447,7 +1446,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1510,7 +1509,7 @@
             "h": 7,
             "w": 12,
             "x": 12,
-            "y": 23
+            "y": 177
           },
           "id": 42,
           "options": {
@@ -1523,7 +1522,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1605,7 +1604,1151 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 1,
+                      "text": "Down"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 0,
+                      "text": "Up"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 0,
+            "y": 2
+          },
+          "id": 80,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "up{job=\"sabnzbd\"}",
+              "instant": true,
+              "legendFormat": "Status",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  },
+                  {
+                    "color": "semi-dark-orange",
+                    "value": 600
+                  },
+                  {
+                    "color": "yellow",
+                    "value": 3600
+                  },
+                  {
+                    "color": "green",
+                    "value": 86400
+                  }
+                ]
+              },
+              "unit": "s"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 3,
+            "y": 2
+          },
+          "id": 82,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "time() - container_start_time_seconds{container=\"sabnzbd\"}",
+              "instant": true,
+              "legendFormat": "Uptime",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 0,
+                      "text": "Unknown"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 1,
+                      "text": "Idle"
+                    },
+                    "2": {
+                      "color": "yellow",
+                      "index": 2,
+                      "text": "Paused"
+                    },
+                    "3": {
+                      "color": "green",
+                      "index": 3,
+                      "text": "Downloading"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  },
+                  {
+                    "color": "orange",
+                    "value": 600
+                  },
+                  {
+                    "color": "#EAB839",
+                    "value": 3600
+                  },
+                  {
+                    "color": "green",
+                    "value": 86400
+                  }
+                ]
+              },
+              "unit": "s"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 6,
+            "y": 2
+          },
+          "id": 108,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_status{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "Mode",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "s"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 9,
+            "y": 2
+          },
+          "id": 116,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_time_estimate_seconds{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "Time Remaining",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "binBps"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 12,
+            "y": 2
+          },
+          "id": 115,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_speed_bps{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "D/L Speed",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "from": 0,
+                    "result": {
+                      "color": "green",
+                      "index": 0
+                    },
+                    "to": 0
+                  },
+                  "type": "range"
+                },
+                {
+                  "options": {
+                    "from": 1,
+                    "result": {
+                      "color": "yellow",
+                      "index": 1
+                    },
+                    "to": 30
+                  },
+                  "type": "range"
+                },
+                {
+                  "options": {
+                    "from": 31,
+                    "result": {
+                      "color": "orange",
+                      "index": 2
+                    },
+                    "to": 500
+                  },
+                  "type": "range"
+                },
+                {
+                  "options": {
+                    "from": 501,
+                    "result": {
+                      "color": "red",
+                      "index": 3
+                    },
+                    "to": 21600
+                  },
+                  "type": "range"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "s"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 15,
+            "y": 2
+          },
+          "id": 110,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_pause_duration_seconds{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "Resume In",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Size"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "bytes"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Usage"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "percentunit"
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "NaN": {
+                            "index": 0,
+                            "text": "N/A"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Remaining"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "bytes"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 6,
+            "x": 18,
+            "y": 2
+          },
+          "id": 122,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_quota_bytes{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "Size",
+              "range": false,
+              "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "1 - max(sabnzbd_remaining_quota_bytes{instance=~\"${sabnzbd_instance}\"} / sabnzbd_quota_bytes{instance=~\"${sabnzbd_instance}\"})",
+              "hide": false,
+              "instant": true,
+              "legendFormat": "Usage",
+              "range": false,
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_remaining_quota_bytes{instance=~\"${sabnzbd_instance}\"}",
+              "hide": false,
+              "instant": true,
+              "legendFormat": "Remaining",
+              "range": false,
+              "refId": "C"
+            }
+          ],
+          "title": "Quota",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "hue",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 3,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "showValues": false,
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "binBps"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 29
+          },
+          "id": 119,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"sabnzbd.*\"}[$__rate_interval]))",
+              "legendFormat": "Network Transmit",
+              "range": true,
+              "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"sabnzbd.*\"}[$__rate_interval])) * -1",
+              "hide": false,
+              "legendFormat": "Network Receive",
+              "range": true,
+              "refId": "B"
+            }
+          ],
+          "title": "Network",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "green",
+                      "index": 0,
+                      "text": "No"
+                    },
+                    "1": {
+                      "color": "yellow",
+                      "index": 1,
+                      "text": "Yes"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  },
+                  {
+                    "color": "orange",
+                    "value": 600
+                  },
+                  {
+                    "color": "#EAB839",
+                    "value": 3600
+                  },
+                  {
+                    "color": "green",
+                    "value": 86400
+                  }
+                ]
+              },
+              "unit": "s"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 2,
+            "x": 12,
+            "y": 29
+          },
+          "id": 109,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_paused_all{instance=~\"${sabnzbd_instance}\"}",
+              "instant": true,
+              "legendFormat": "Hard Pause",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Size"
+                },
+                "properties": [
+                  {
+                    "id": "unit",
+                    "value": "bytes"
+                  },
+                  {
+                    "id": "color",
+                    "value": {
+                      "mode": "continuous-BlPu"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 4,
+            "x": 14,
+            "y": 29
+          },
+          "id": 86,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_article_cache_articles{instance=~\"${sabnzbd_instance}\"}",
+              "hide": false,
+              "instant": true,
+              "legendFormat": "Articles",
+              "range": false,
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "sabnzbd_article_cache_bytes{instance=~\"${sabnzbd_instance}\"}",
+              "hide": false,
+              "instant": true,
+              "legendFormat": "Size",
+              "range": false,
+              "refId": "D"
+            }
+          ],
+          "title": "Cache",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "max": 1,
+              "min": 0,
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "percentunit"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 18,
+            "y": 29
+          },
+          "id": 124,
+          "options": {
+            "displayMode": "lcd",
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": false
+            },
+            "maxVizHeight": 300,
+            "minVizHeight": 10,
+            "minVizWidth": 0,
+            "namePlacement": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showUnfilled": true,
+            "sizing": "auto",
+            "valueMode": "color"
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "min(sabnzbd_disk_used_bytes{instance=~\"${sabnzbd_instance}\",folder=\"download\"} / sabnzbd_disk_total_bytes{instance=~\"${sabnzbd_instance}\",folder=\"download\"})",
+              "instant": true,
+              "legendFormat": "Download",
+              "range": false,
+              "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "min(sabnzbd_disk_used_bytes{instance=~\"${sabnzbd_instance}\",folder=\"complete\"} / sabnzbd_disk_total_bytes{instance=~\"${sabnzbd_instance}\",folder=\"complete\"})",
+              "hide": false,
+              "instant": true,
+              "legendFormat": "Complete",
+              "range": false,
+              "refId": "B"
+            }
+          ],
+          "title": "Disk Used",
+          "type": "bargauge"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "min": 0,
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "bytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 9,
+            "w": 12,
+            "x": 12,
+            "y": 35
+          },
+          "id": 98,
+          "options": {
+            "displayMode": "lcd",
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": false
+            },
+            "maxVizHeight": 300,
+            "minVizHeight": 10,
+            "minVizWidth": 0,
+            "namePlacement": "auto",
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showUnfilled": true,
+            "sizing": "auto",
+            "valueMode": "color"
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "avg(increase(sabnzbd_server_downloaded_bytes{instance=~\"${sabnzbd_instance}\"}[$__range])) by (server)",
+              "format": "time_series",
+              "instant": true,
+              "legendFormat": "{{server}}",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "Recent Downloaded By Server",
+          "type": "bargauge"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
           },
           "description": "",
           "fieldConfig": {
@@ -1703,10 +2846,10 @@
             ]
           },
           "gridPos": {
-            "h": 4,
-            "w": 15,
+            "h": 3,
+            "w": 12,
             "x": 0,
-            "y": 168
+            "y": 37
           },
           "id": 84,
           "options": {
@@ -1732,7 +2875,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1747,7 +2890,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1761,7 +2904,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1775,7 +2918,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1789,7 +2932,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1803,7 +2946,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(sabnzbd_server_articles_success{instance=~\"${sabnzbd_instance}\"}) / sum(sabnzbd_server_articles_total{instance=~\"${sabnzbd_instance}\"})",
@@ -1819,964 +2962,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "description": "",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  }
-                ]
-              }
-            },
-            "overrides": [
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "Size"
-                },
-                "properties": [
-                  {
-                    "id": "unit",
-                    "value": "bytes"
-                  }
-                ]
-              },
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "Usage"
-                },
-                "properties": [
-                  {
-                    "id": "unit",
-                    "value": "percentunit"
-                  },
-                  {
-                    "id": "mappings",
-                    "value": [
-                      {
-                        "options": {
-                          "NaN": {
-                            "index": 0,
-                            "text": "N/A"
-                          }
-                        },
-                        "type": "value"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "Remaining"
-                },
-                "properties": [
-                  {
-                    "id": "unit",
-                    "value": "bytes"
-                  }
-                ]
-              }
-            ]
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 5,
-            "x": 15,
-            "y": 168
-          },
-          "id": 122,
-          "options": {
-            "colorMode": "value",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_quota_bytes{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "Size",
-              "range": false,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "1 - max(sabnzbd_remaining_quota_bytes{instance=~\"${sabnzbd_instance}\"} / sabnzbd_quota_bytes{instance=~\"${sabnzbd_instance}\"})",
-              "hide": false,
-              "instant": true,
-              "legendFormat": "Usage",
-              "range": false,
-              "refId": "B"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_remaining_quota_bytes{instance=~\"${sabnzbd_instance}\"}",
-              "hide": false,
-              "instant": true,
-              "legendFormat": "Remaining",
-              "range": false,
-              "refId": "C"
-            }
-          ],
-          "title": "Quota",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "none"
-            },
-            "overrides": [
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "Size"
-                },
-                "properties": [
-                  {
-                    "id": "unit",
-                    "value": "bytes"
-                  },
-                  {
-                    "id": "color",
-                    "value": {
-                      "mode": "continuous-BlPu"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 4,
-            "x": 20,
-            "y": 168
-          },
-          "id": 86,
-          "options": {
-            "colorMode": "value",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_article_cache_articles{instance=~\"${sabnzbd_instance}\"}",
-              "hide": false,
-              "instant": true,
-              "legendFormat": "Articles",
-              "range": false,
-              "refId": "B"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_article_cache_bytes{instance=~\"${sabnzbd_instance}\"}",
-              "hide": false,
-              "instant": true,
-              "legendFormat": "Size",
-              "range": false,
-              "refId": "D"
-            }
-          ],
-          "title": "Cache",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "mappings": [
-                {
-                  "options": {
-                    "0": {
-                      "color": "red",
-                      "index": 1,
-                      "text": "Down"
-                    },
-                    "1": {
-                      "color": "green",
-                      "index": 0,
-                      "text": "Up"
-                    }
-                  },
-                  "type": "value"
-                }
-              ],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 0,
-            "y": 241
-          },
-          "id": 80,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "up{job=\"sabnzbd\"}",
-              "instant": true,
-              "legendFormat": "Status",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  },
-                  {
-                    "color": "semi-dark-orange",
-                    "value": 600
-                  },
-                  {
-                    "color": "yellow",
-                    "value": 3600
-                  },
-                  {
-                    "color": "green",
-                    "value": 86400
-                  }
-                ]
-              },
-              "unit": "s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 3,
-            "y": 241
-          },
-          "id": 82,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "time() - container_start_time_seconds{container=\"sabnzbd\"}",
-              "instant": true,
-              "legendFormat": "Uptime",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "mappings": [
-                {
-                  "options": {
-                    "0": {
-                      "color": "red",
-                      "index": 0,
-                      "text": "Unknown"
-                    },
-                    "1": {
-                      "color": "green",
-                      "index": 1,
-                      "text": "Idle"
-                    },
-                    "2": {
-                      "color": "yellow",
-                      "index": 2,
-                      "text": "Paused"
-                    },
-                    "3": {
-                      "color": "green",
-                      "index": 3,
-                      "text": "Downloading"
-                    }
-                  },
-                  "type": "value"
-                }
-              ],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  },
-                  {
-                    "color": "orange",
-                    "value": 600
-                  },
-                  {
-                    "color": "#EAB839",
-                    "value": 3600
-                  },
-                  {
-                    "color": "green",
-                    "value": 86400
-                  }
-                ]
-              },
-              "unit": "s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 6,
-            "y": 241
-          },
-          "id": 108,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_status{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "Mode",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 9,
-            "y": 241
-          },
-          "id": 116,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_time_estimate_seconds{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "Time Remaining",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "binBps"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 12,
-            "y": 241
-          },
-          "id": 115,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_speed_bps{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "D/L Speed",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "mappings": [
-                {
-                  "options": {
-                    "0": {
-                      "color": "green",
-                      "index": 0,
-                      "text": "No"
-                    },
-                    "1": {
-                      "color": "yellow",
-                      "index": 1,
-                      "text": "Yes"
-                    }
-                  },
-                  "type": "value"
-                }
-              ],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  },
-                  {
-                    "color": "orange",
-                    "value": 600
-                  },
-                  {
-                    "color": "#EAB839",
-                    "value": 3600
-                  },
-                  {
-                    "color": "green",
-                    "value": 86400
-                  }
-                ]
-              },
-              "unit": "s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 2,
-            "x": 15,
-            "y": 241
-          },
-          "id": 109,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_paused_all{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "Hard Pause",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [
-                {
-                  "options": {
-                    "from": 0,
-                    "result": {
-                      "color": "green",
-                      "index": 0
-                    },
-                    "to": 0
-                  },
-                  "type": "range"
-                },
-                {
-                  "options": {
-                    "from": 1,
-                    "result": {
-                      "color": "yellow",
-                      "index": 1
-                    },
-                    "to": 30
-                  },
-                  "type": "range"
-                },
-                {
-                  "options": {
-                    "from": 31,
-                    "result": {
-                      "color": "orange",
-                      "index": 2
-                    },
-                    "to": 500
-                  },
-                  "type": "range"
-                },
-                {
-                  "options": {
-                    "from": 501,
-                    "result": {
-                      "color": "red",
-                      "index": 3
-                    },
-                    "to": 21600
-                  },
-                  "type": "range"
-                }
-              ],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "red",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 3,
-            "x": 17,
-            "y": 241
-          },
-          "id": 110,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sabnzbd_pause_duration_seconds{instance=~\"${sabnzbd_instance}\"}",
-              "instant": true,
-              "legendFormat": "Resume In",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "description": "",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "max": 1,
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "percentunit"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 4,
-            "x": 20,
-            "y": 241
-          },
-          "id": 124,
-          "options": {
-            "displayMode": "lcd",
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "maxVizHeight": 300,
-            "minVizHeight": 10,
-            "minVizWidth": 0,
-            "namePlacement": "auto",
-            "orientation": "auto",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showUnfilled": true,
-            "sizing": "auto",
-            "valueMode": "color"
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "min(sabnzbd_disk_used_bytes{instance=~\"${sabnzbd_instance}\",folder=\"download\"} / sabnzbd_disk_total_bytes{instance=~\"${sabnzbd_instance}\",folder=\"download\"})",
-              "instant": true,
-              "legendFormat": "Download",
-              "range": false,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "min(sabnzbd_disk_used_bytes{instance=~\"${sabnzbd_instance}\",folder=\"complete\"} / sabnzbd_disk_total_bytes{instance=~\"${sabnzbd_instance}\",folder=\"complete\"})",
-              "hide": false,
-              "instant": true,
-              "legendFormat": "Complete",
-              "range": false,
-              "refId": "B"
-            }
-          ],
-          "title": "Disk Used",
-          "type": "bargauge"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -2839,118 +3025,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 245
-          },
-          "id": 119,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": true
-            },
-            "tooltip": {
-              "hideZeros": false,
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"sabnzbd.*\"}[$__rate_interval]))",
-              "legendFormat": "Network Transmit",
-              "range": true,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"sabnzbd.*\"}[$__rate_interval])) * -1",
-              "hide": false,
-              "legendFormat": "Network Receive",
-              "range": true,
-              "refId": "B"
-            }
-          ],
-          "title": "Network",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "barWidthFactor": 0.6,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "hue",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 3,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "showValues": false,
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "binBps"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 12,
-            "y": 245
+            "y": 40
           },
           "id": 118,
           "options": {
@@ -2971,7 +3046,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "avg(rate(sabnzbd_server_downloaded_bytes[$__rate_interval])) by (server)",
@@ -2986,7 +3061,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -3013,9 +3088,9 @@
           },
           "gridPos": {
             "h": 9,
-            "w": 8,
-            "x": 0,
-            "y": 253
+            "w": 12,
+            "x": 12,
+            "y": 44
           },
           "id": 96,
           "options": {
@@ -3047,7 +3122,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3065,83 +3140,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "bytes"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 9,
-            "w": 8,
-            "x": 8,
-            "y": 253
-          },
-          "id": 98,
-          "options": {
-            "displayMode": "lcd",
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "maxVizHeight": 300,
-            "minVizHeight": 10,
-            "minVizWidth": 0,
-            "namePlacement": "auto",
-            "orientation": "horizontal",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showUnfilled": true,
-            "sizing": "auto",
-            "valueMode": "color"
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "avg(increase(sabnzbd_server_downloaded_bytes{instance=~\"${sabnzbd_instance}\"}[$__range])) by (server)",
-              "format": "time_series",
-              "instant": true,
-              "legendFormat": "{{server}}",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "Recent Downloaded By Server",
-          "type": "bargauge"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -3173,9 +3172,9 @@
           },
           "gridPos": {
             "h": 9,
-            "w": 8,
-            "x": 16,
-            "y": 253
+            "w": 12,
+            "x": 0,
+            "y": 48
           },
           "id": 100,
           "options": {
@@ -3208,7 +3207,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3241,249 +3240,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "none"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 24,
-            "x": 0,
-            "y": 263
-          },
-          "id": 128,
-          "options": {
-            "colorMode": "value",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {
-              "valueSize": 60
-            },
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_queue_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Queued",
-              "range": true,
-              "refId": "B"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_history_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "History",
-              "range": true,
-              "refId": "C"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_downloaded_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Downloaded",
-              "range": true,
-              "refId": "D"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_monitored_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Monitored",
-              "range": true,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_unmonitored_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Unmonitored",
-              "range": true,
-              "refId": "E"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_missing_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Missing",
-              "range": true,
-              "refId": "F"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_wanted_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Wanted",
-              "range": true,
-              "refId": "G"
-            }
-          ],
-          "title": "Subtitle Totals",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "mappings": [
-                {
-                  "options": {
-                    "0": {
-                      "color": "red",
-                      "index": 1,
-                      "text": "Down"
-                    },
-                    "1": {
-                      "color": "green",
-                      "index": 0,
-                      "text": "Up"
-                    }
-                  },
-                  "type": "value"
-                }
-              ],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 4,
-            "x": 0,
-            "y": 267
-          },
-          "id": 126,
-          "options": {
-            "colorMode": "background",
-            "graphMode": "area",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_system_status{instance=~\"${bazarr_instance}\"}",
-              "instant": true,
-              "legendFormat": "Status",
-              "range": false,
-              "refId": "A"
-            }
-          ],
-          "title": "",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -3534,9 +3291,9 @@
           },
           "gridPos": {
             "h": 4,
-            "w": 8,
-            "x": 4,
-            "y": 267
+            "w": 5,
+            "x": 0,
+            "y": 3
           },
           "id": 127,
           "options": {
@@ -3562,7 +3319,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3579,7 +3336,94 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 1,
+                      "text": "Down"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 0,
+                      "text": "Up"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 4,
+            "x": 5,
+            "y": 3
+          },
+          "id": 126,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_system_status{instance=~\"${bazarr_instance}\"}",
+              "instant": true,
+              "legendFormat": "Status",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -3602,9 +3446,9 @@
           },
           "gridPos": {
             "h": 4,
-            "w": 12,
-            "x": 12,
-            "y": 267
+            "w": 15,
+            "x": 9,
+            "y": 3
           },
           "id": 130,
           "options": {
@@ -3630,7 +3474,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3644,7 +3488,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3658,7 +3502,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3672,7 +3516,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3686,7 +3530,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3704,189 +3548,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  }
-                ]
-              },
-              "unit": "none"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 4,
-            "w": 12,
-            "x": 0,
-            "y": 271
-          },
-          "id": 129,
-          "options": {
-            "colorMode": "value",
-            "graphMode": "none",
-            "justifyMode": "auto",
-            "orientation": "auto",
-            "percentChangeColorMode": "standard",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showPercentChange": false,
-            "text": {},
-            "textMode": "auto",
-            "wideLayout": true
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "max(bazarr_episode_subtitles_monitored_total{instance=~\"${bazarr_instance}\"})",
-              "hide": false,
-              "legendFormat": "Monitored",
-              "range": true,
-              "refId": "B"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "max(bazarr_episode_subtitles_downloaded_total{instance=~\"${bazarr_instance}\"})",
-              "hide": false,
-              "legendFormat": "Total",
-              "range": true,
-              "refId": "D"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "max(bazarr_episode_subtitles_unmonitored_total{instance=~\"${bazarr_instance}\"})",
-              "hide": false,
-              "legendFormat": "Unmonitored",
-              "range": true,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "expr": "max(bazarr_episode_subtitles_wanted_total{instance=~\"${bazarr_instance}\"})",
-              "hide": false,
-              "legendFormat": "Wanted",
-              "range": true,
-              "refId": "C"
-            }
-          ],
-          "title": "Episode Subtitles",
-          "type": "stat"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "continuous-BlPu"
-              },
-              "displayName": "${__field.displayName}",
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 15,
-            "w": 12,
-            "x": 12,
-            "y": 271
-          },
-          "id": 136,
-          "options": {
-            "displayMode": "lcd",
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "maxVizHeight": 300,
-            "minVizHeight": 10,
-            "minVizWidth": 0,
-            "namePlacement": "auto",
-            "orientation": "auto",
-            "reduceOptions": {
-              "calcs": [
-                "lastNotNull"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showUnfilled": true,
-            "sizing": "auto",
-            "valueMode": "color"
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_provider_total{instance=~\"${bazarr_instance}\"}",
-              "format": "time_series",
-              "instant": false,
-              "legendFormat": "{{provider}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "Providers",
-          "type": "bargauge"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -3897,25 +3559,36 @@
                 "axisBorderShow": false,
                 "axisCenteredZero": false,
                 "axisColorMode": "text",
-                "axisGridShow": true,
                 "axisLabel": "",
                 "axisPlacement": "auto",
-                "fillOpacity": 80,
-                "gradientMode": "none",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "hue",
                 "hideFrom": {
                   "legend": false,
                   "tooltip": false,
                   "viz": false
                 },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
                 "lineWidth": 1,
+                "pointSize": 3,
                 "scaleDistribution": {
                   "type": "linear"
+                },
+                "showPoints": "auto",
+                "showValues": false,
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
                 },
                 "thresholdsStyle": {
                   "mode": "off"
                 }
               },
-              "displayName": "${__field.displayName}",
               "mappings": [],
               "thresholds": {
                 "mode": "absolute",
@@ -3930,64 +3603,81 @@
                   }
                 ]
               },
-              "unit": "none"
+              "unit": "bytes"
             },
             "overrides": []
           },
           "gridPos": {
-            "h": 11,
-            "w": 12,
+            "h": 9,
+            "w": 8,
             "x": 0,
-            "y": 275
+            "y": 30
           },
-          "id": 137,
+          "id": 134,
           "options": {
-            "barRadius": 0.5,
-            "barWidth": 1,
-            "fullHighlight": false,
-            "groupWidth": 1,
             "legend": {
               "calcs": [],
               "displayMode": "list",
               "placement": "bottom",
               "showLegend": false
             },
-            "orientation": "horizontal",
-            "showValue": "auto",
-            "stacking": "none",
             "tooltip": {
               "hideZeros": false,
               "mode": "single",
               "sort": "none"
-            },
-            "xField": "score",
-            "xTickLabelRotation": 0,
-            "xTickLabelSpacing": 0
+            }
           },
           "pluginVersion": "12.3.0-18186912471",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "bazarr_subtitles_score_total{instance=~\"${bazarr_instance}\"}",
-              "format": "table",
-              "instant": true,
-              "legendFormat": "{{score}}",
-              "range": false,
+              "expr": "bazarr_episode_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
+              "instant": false,
+              "legendFormat": "Episodes",
+              "range": true,
               "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_movie_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Movies",
+              "range": true,
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Total",
+              "range": true,
+              "refId": "C"
             }
           ],
-          "title": "Scores",
-          "type": "barchart"
+          "title": "Disk Used",
+          "type": "timeseries"
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4047,10 +3737,10 @@
             ]
           },
           "gridPos": {
-            "h": 8,
-            "w": 12,
-            "x": 0,
-            "y": 286
+            "h": 9,
+            "w": 16,
+            "x": 8,
+            "y": 30
           },
           "id": 135,
           "options": {
@@ -4063,7 +3753,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4130,7 +3820,366 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 11,
+            "x": 0,
+            "y": 39
+          },
+          "id": 129,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {},
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "max(bazarr_episode_subtitles_monitored_total{instance=~\"${bazarr_instance}\"})",
+              "hide": false,
+              "legendFormat": "Monitored",
+              "range": true,
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "max(bazarr_episode_subtitles_downloaded_total{instance=~\"${bazarr_instance}\"})",
+              "hide": false,
+              "legendFormat": "Total",
+              "range": true,
+              "refId": "D"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "max(bazarr_episode_subtitles_unmonitored_total{instance=~\"${bazarr_instance}\"})",
+              "hide": false,
+              "legendFormat": "Unmonitored",
+              "range": true,
+              "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "expr": "max(bazarr_episode_subtitles_wanted_total{instance=~\"${bazarr_instance}\"})",
+              "hide": false,
+              "legendFormat": "Wanted",
+              "range": true,
+              "refId": "C"
+            }
+          ],
+          "title": "Episode Subtitles",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 13,
+            "x": 11,
+            "y": 39
+          },
+          "id": 128,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {
+              "valueSize": 60
+            },
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_queue_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Queued",
+              "range": true,
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_history_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "History",
+              "range": true,
+              "refId": "C"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_downloaded_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Downloaded",
+              "range": true,
+              "refId": "D"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_monitored_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Monitored",
+              "range": true,
+              "refId": "A"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_unmonitored_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Unmonitored",
+              "range": true,
+              "refId": "E"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_missing_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Missing",
+              "range": true,
+              "refId": "F"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_wanted_total{instance=~\"${bazarr_instance}\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "Wanted",
+              "range": true,
+              "refId": "G"
+            }
+          ],
+          "title": "Subtitle Totals",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisGridShow": true,
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "fillOpacity": 80,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineWidth": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "displayName": "${__field.displayName}",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 12,
+            "w": 12,
+            "x": 0,
+            "y": 43
+          },
+          "id": 137,
+          "options": {
+            "barRadius": 0.5,
+            "barWidth": 1,
+            "fullHighlight": false,
+            "groupWidth": 1,
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": false
+            },
+            "orientation": "horizontal",
+            "showValue": "auto",
+            "stacking": "none",
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "single",
+              "sort": "none"
+            },
+            "xField": "score",
+            "xTickLabelRotation": 0,
+            "xTickLabelSpacing": 0
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_score_total{instance=~\"${bazarr_instance}\"}",
+              "format": "table",
+              "instant": true,
+              "legendFormat": "{{score}}",
+              "range": false,
+              "refId": "A"
+            }
+          ],
+          "title": "Scores",
+          "type": "barchart"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4156,12 +4205,12 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 8,
+            "h": 9,
             "w": 12,
             "x": 12,
-            "y": 286
+            "y": 43
           },
-          "id": 132,
+          "id": 136,
           "options": {
             "displayMode": "lcd",
             "legend": {
@@ -4191,154 +4240,25 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "bazarr_subtitles_language_total{instance=~\"${bazarr_instance}\"}",
+              "expr": "bazarr_subtitles_provider_total{instance=~\"${bazarr_instance}\"}",
               "format": "time_series",
               "instant": false,
-              "legendFormat": "{{language}}",
+              "legendFormat": "{{provider}}",
               "range": true,
               "refId": "A"
             }
           ],
-          "title": "Languages",
+          "title": "Providers",
           "type": "bargauge"
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "barWidthFactor": 0.6,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "hue",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 3,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "showValues": false,
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": 0
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "bytes"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 9,
-            "w": 8,
-            "x": 0,
-            "y": 294
-          },
-          "id": 134,
-          "options": {
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "tooltip": {
-              "hideZeros": false,
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "12.3.0-18186912471",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_episode_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
-              "instant": false,
-              "legendFormat": "Episodes",
-              "range": true,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_movie_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Movies",
-              "range": true,
-              "refId": "B"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "grafanacloud-prom"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "bazarr_subtitles_filesize_total{instance=~\"${bazarr_instance}\"}",
-              "hide": false,
-              "instant": false,
-              "legendFormat": "Total",
-              "range": true,
-              "refId": "C"
-            }
-          ],
-          "title": "Disk Used",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4398,10 +4318,10 @@
             "overrides": []
           },
           "gridPos": {
-            "h": 9,
-            "w": 16,
-            "x": 8,
-            "y": 294
+            "h": 13,
+            "w": 12,
+            "x": 12,
+            "y": 52
           },
           "id": 133,
           "options": {
@@ -4422,7 +4342,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"bazarr.*\"}[$__rate_interval]))",
@@ -4433,7 +4353,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"bazarr.*\"}[$__rate_interval])) * -1",
@@ -4445,6 +4365,85 @@
           ],
           "title": "Network",
           "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "Prometheus"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-BlPu"
+              },
+              "displayName": "${__field.displayName}",
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 10,
+            "w": 12,
+            "x": 0,
+            "y": 55
+          },
+          "id": 132,
+          "options": {
+            "displayMode": "lcd",
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": false
+            },
+            "maxVizHeight": 300,
+            "minVizHeight": 10,
+            "minVizWidth": 0,
+            "namePlacement": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showUnfilled": true,
+            "sizing": "auto",
+            "valueMode": "color"
+          },
+          "pluginVersion": "12.3.0-18186912471",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "Prometheus"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "bazarr_subtitles_language_total{instance=~\"${bazarr_instance}\"}",
+              "format": "time_series",
+              "instant": false,
+              "legendFormat": "{{language}}",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "Languages",
+          "type": "bargauge"
         }
       ],
       "repeat": "bazarr_instance",
@@ -4464,7 +4463,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4508,7 +4507,7 @@
             "h": 4,
             "w": 3,
             "x": 0,
-            "y": 170
+            "y": 4
           },
           "id": 3,
           "options": {
@@ -4534,7 +4533,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4551,7 +4550,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4604,7 +4603,7 @@
             "h": 4,
             "w": 3,
             "x": 3,
-            "y": 170
+            "y": 4
           },
           "id": 7,
           "options": {
@@ -4630,7 +4629,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4647,7 +4646,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4689,7 +4688,7 @@
             "h": 4,
             "w": 6,
             "x": 6,
-            "y": 170
+            "y": 4
           },
           "id": 5,
           "options": {
@@ -4715,7 +4714,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4729,7 +4728,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4743,7 +4742,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4761,7 +4760,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4838,7 +4837,7 @@
             "h": 4,
             "w": 12,
             "x": 12,
-            "y": 170
+            "y": 4
           },
           "id": 6,
           "options": {
@@ -4864,7 +4863,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4878,7 +4877,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4892,7 +4891,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4906,7 +4905,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4920,7 +4919,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -4938,7 +4937,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -4966,7 +4965,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 220
+            "y": 8
           },
           "id": 9,
           "options": {
@@ -4999,7 +4998,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5017,7 +5016,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5080,7 +5079,7 @@
             "h": 9,
             "w": 8,
             "x": 0,
-            "y": 230
+            "y": 18
           },
           "id": 15,
           "options": {
@@ -5101,7 +5100,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"radarr.*\"}[$__rate_interval]))",
@@ -5112,7 +5111,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"radarr.*\"}[$__rate_interval])) * -1",
@@ -5128,7 +5127,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5191,7 +5190,7 @@
             "h": 9,
             "w": 8,
             "x": 8,
-            "y": 230
+            "y": 18
           },
           "id": 16,
           "options": {
@@ -5212,7 +5211,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "radarr_movie_filesize_total{instance=~\"${radarr_instance}\"}",
@@ -5227,7 +5226,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5290,7 +5289,7 @@
             "h": 9,
             "w": 8,
             "x": 16,
-            "y": 230
+            "y": 18
           },
           "id": 56,
           "options": {
@@ -5303,7 +5302,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5385,7 +5384,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5413,8 +5412,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5429,7 +5427,7 @@
             "h": 4,
             "w": 3,
             "x": 0,
-            "y": 171
+            "y": 200
           },
           "id": 17,
           "options": {
@@ -5437,7 +5435,6 @@
             "graphMode": "area",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5445,17 +5442,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5472,7 +5467,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5500,8 +5495,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": 0
+                    "color": "red"
                   },
                   {
                     "color": "semi-dark-orange",
@@ -5525,7 +5519,7 @@
             "h": 4,
             "w": 3,
             "x": 3,
-            "y": 171
+            "y": 200
           },
           "id": 18,
           "options": {
@@ -5533,7 +5527,6 @@
             "graphMode": "area",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5541,17 +5534,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5568,7 +5559,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5580,8 +5571,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   }
                 ]
               },
@@ -5593,7 +5583,7 @@
             "h": 4,
             "w": 6,
             "x": 6,
-            "y": 171
+            "y": 200
           },
           "id": 19,
           "options": {
@@ -5601,7 +5591,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5609,19 +5598,17 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {
               "valueSize": 60
             },
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5635,7 +5622,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5649,7 +5636,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5667,7 +5654,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5679,8 +5666,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   }
                 ]
               },
@@ -5692,7 +5678,7 @@
             "h": 4,
             "w": 4,
             "x": 12,
-            "y": 171
+            "y": 200
           },
           "id": 20,
           "options": {
@@ -5700,7 +5686,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5708,17 +5693,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(sonarr_series_monitored_total{instance=~\"${sonarr_instance}\"})",
@@ -5730,7 +5713,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(sonarr_series_total{instance=~\"${sonarr_instance}\"})",
@@ -5746,7 +5729,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5758,8 +5741,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   }
                 ]
               },
@@ -5771,7 +5753,7 @@
             "h": 4,
             "w": 4,
             "x": 16,
-            "y": 171
+            "y": 200
           },
           "id": 21,
           "options": {
@@ -5779,7 +5761,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5787,17 +5768,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5811,7 +5790,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5829,7 +5808,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5841,8 +5820,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   }
                 ]
               },
@@ -5854,7 +5832,7 @@
             "h": 4,
             "w": 4,
             "x": 20,
-            "y": 171
+            "y": 200
           },
           "id": 22,
           "options": {
@@ -5862,7 +5840,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -5870,17 +5847,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(sonarr_episode_missing_total{instance=~\"${sonarr_instance}\"})",
@@ -5892,7 +5867,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(sonarr_episode_total{instance=~\"${sonarr_instance}\"})",
@@ -5908,7 +5883,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5920,8 +5895,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5936,21 +5910,13 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 198
+            "y": 204
           },
           "id": 23,
           "options": {
             "displayMode": "lcd",
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "maxVizHeight": 300,
             "minVizHeight": 10,
             "minVizWidth": 0,
-            "namePlacement": "auto",
             "orientation": "horizontal",
             "reduceOptions": {
               "calcs": [
@@ -5960,15 +5926,14 @@
               "values": false
             },
             "showUnfilled": true,
-            "sizing": "auto",
             "valueMode": "color"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -5986,7 +5951,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -5994,13 +5959,11 @@
                 "mode": "palette-classic"
               },
               "custom": {
-                "axisBorderShow": false,
                 "axisCenteredZero": false,
                 "axisColorMode": "text",
                 "axisLabel": "",
                 "axisPlacement": "auto",
                 "barAlignment": 0,
-                "barWidthFactor": 0.6,
                 "drawStyle": "line",
                 "fillOpacity": 10,
                 "gradientMode": "hue",
@@ -6009,7 +5972,6 @@
                   "tooltip": false,
                   "viz": false
                 },
-                "insertNulls": false,
                 "lineInterpolation": "linear",
                 "lineWidth": 1,
                 "pointSize": 3,
@@ -6017,7 +5979,6 @@
                   "type": "linear"
                 },
                 "showPoints": "auto",
-                "showValues": false,
                 "spanNulls": false,
                 "stacking": {
                   "group": "A",
@@ -6032,8 +5993,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6049,7 +6009,7 @@
             "h": 9,
             "w": 8,
             "x": 0,
-            "y": 208
+            "y": 214
           },
           "id": 24,
           "options": {
@@ -6060,17 +6020,15 @@
               "showLegend": true
             },
             "tooltip": {
-              "hideZeros": false,
               "mode": "single",
               "sort": "none"
             }
           },
-          "pluginVersion": "12.3.0-18186912471",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"sonarr.*\"}[$__rate_interval]))",
@@ -6081,7 +6039,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"sonarr.*\"}[$__rate_interval])) * -1",
@@ -6097,7 +6055,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6105,13 +6063,11 @@
                 "mode": "palette-classic"
               },
               "custom": {
-                "axisBorderShow": false,
                 "axisCenteredZero": false,
                 "axisColorMode": "text",
                 "axisLabel": "",
                 "axisPlacement": "auto",
                 "barAlignment": 0,
-                "barWidthFactor": 0.6,
                 "drawStyle": "line",
                 "fillOpacity": 10,
                 "gradientMode": "hue",
@@ -6120,7 +6076,6 @@
                   "tooltip": false,
                   "viz": false
                 },
-                "insertNulls": false,
                 "lineInterpolation": "linear",
                 "lineWidth": 1,
                 "pointSize": 3,
@@ -6128,7 +6083,6 @@
                   "type": "linear"
                 },
                 "showPoints": "auto",
-                "showValues": false,
                 "spanNulls": false,
                 "stacking": {
                   "group": "A",
@@ -6143,8 +6097,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6160,7 +6113,7 @@
             "h": 9,
             "w": 8,
             "x": 8,
-            "y": 208
+            "y": 214
           },
           "id": 25,
           "options": {
@@ -6171,17 +6124,15 @@
               "showLegend": false
             },
             "tooltip": {
-              "hideZeros": false,
               "mode": "single",
               "sort": "none"
             }
           },
-          "pluginVersion": "12.3.0-18186912471",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6198,7 +6149,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6210,9 +6161,6 @@
                 "cellOptions": {
                   "type": "auto"
                 },
-                "footer": {
-                  "reducers": []
-                },
                 "inspect": false
               },
               "mappings": [],
@@ -6220,8 +6168,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6261,20 +6208,28 @@
             "h": 9,
             "w": 8,
             "x": 16,
-            "y": 208
+            "y": 214
           },
           "id": 55,
           "options": {
             "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
             "frameIndex": 1,
             "showHeader": true
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6356,7 +6311,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6384,8 +6339,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6400,7 +6354,7 @@
             "h": 4,
             "w": 3,
             "x": 0,
-            "y": 172
+            "y": 186
           },
           "id": 60,
           "options": {
@@ -6408,7 +6362,6 @@
             "graphMode": "area",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -6416,17 +6369,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6443,7 +6394,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6471,8 +6422,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "red",
-                    "value": 0
+                    "color": "red"
                   },
                   {
                     "color": "semi-dark-orange",
@@ -6496,7 +6446,7 @@
             "h": 4,
             "w": 3,
             "x": 3,
-            "y": 172
+            "y": 186
           },
           "id": 62,
           "options": {
@@ -6504,7 +6454,6 @@
             "graphMode": "area",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -6512,17 +6461,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6539,7 +6486,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "description": "",
           "fieldConfig": {
@@ -6552,8 +6499,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   }
                 ]
               },
@@ -6602,7 +6548,7 @@
             "h": 4,
             "w": 8,
             "x": 6,
-            "y": 172
+            "y": 186
           },
           "id": 64,
           "options": {
@@ -6610,7 +6556,6 @@
             "graphMode": "none",
             "justifyMode": "center",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -6618,17 +6563,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6642,7 +6585,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6656,7 +6599,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6670,7 +6613,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6688,7 +6631,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6700,8 +6643,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6717,7 +6659,7 @@
             "h": 4,
             "w": 4,
             "x": 14,
-            "y": 172
+            "y": 186
           },
           "id": 66,
           "options": {
@@ -6725,7 +6667,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -6733,17 +6674,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(lidarr_artists_monitored_total{instance=~\"${lidarr_instance}\"})",
@@ -6755,7 +6694,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(lidarr_artists_total{instance=~\"${lidarr_instance}\"})",
@@ -6771,7 +6710,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6783,8 +6722,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6800,7 +6738,7 @@
             "h": 4,
             "w": 6,
             "x": 18,
-            "y": 172
+            "y": 186
           },
           "id": 68,
           "options": {
@@ -6808,7 +6746,6 @@
             "graphMode": "none",
             "justifyMode": "auto",
             "orientation": "auto",
-            "percentChangeColorMode": "standard",
             "reduceOptions": {
               "calcs": [
                 "lastNotNull"
@@ -6816,17 +6753,15 @@
               "fields": "",
               "values": false
             },
-            "showPercentChange": false,
             "text": {},
-            "textMode": "auto",
-            "wideLayout": true
+            "textMode": "auto"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(lidarr_albums_monitored_total{instance=~\"${lidarr_instance}\"})",
@@ -6838,7 +6773,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(lidarr_albums_total{instance=~\"${lidarr_instance}\"})",
@@ -6850,7 +6785,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "max(lidarr_albums_missing_total{instance=~\"${lidarr_instance}\"})",
@@ -6866,7 +6801,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6878,8 +6813,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6894,21 +6828,13 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 176
+            "y": 190
           },
           "id": 70,
           "options": {
             "displayMode": "lcd",
-            "legend": {
-              "calcs": [],
-              "displayMode": "list",
-              "placement": "bottom",
-              "showLegend": false
-            },
-            "maxVizHeight": 300,
             "minVizHeight": 10,
             "minVizWidth": 0,
-            "namePlacement": "auto",
             "orientation": "horizontal",
             "reduceOptions": {
               "calcs": [
@@ -6918,15 +6844,14 @@
               "values": false
             },
             "showUnfilled": true,
-            "sizing": "auto",
             "valueMode": "color"
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -6944,7 +6869,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -6952,13 +6877,11 @@
                 "mode": "palette-classic"
               },
               "custom": {
-                "axisBorderShow": false,
                 "axisCenteredZero": false,
                 "axisColorMode": "text",
                 "axisLabel": "",
                 "axisPlacement": "auto",
                 "barAlignment": 0,
-                "barWidthFactor": 0.6,
                 "drawStyle": "line",
                 "fillOpacity": 10,
                 "gradientMode": "hue",
@@ -6967,7 +6890,6 @@
                   "tooltip": false,
                   "viz": false
                 },
-                "insertNulls": false,
                 "lineInterpolation": "linear",
                 "lineWidth": 1,
                 "pointSize": 3,
@@ -6975,7 +6897,6 @@
                   "type": "linear"
                 },
                 "showPoints": "auto",
-                "showValues": false,
                 "spanNulls": false,
                 "stacking": {
                   "group": "A",
@@ -6990,8 +6911,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7007,7 +6927,7 @@
             "h": 9,
             "w": 8,
             "x": 0,
-            "y": 186
+            "y": 200
           },
           "id": 72,
           "options": {
@@ -7018,17 +6938,15 @@
               "showLegend": true
             },
             "tooltip": {
-              "hideZeros": false,
               "mode": "single",
               "sort": "none"
             }
           },
-          "pluginVersion": "12.3.0-18186912471",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_transmit_bytes_total{pod=~\"lidarr.*\"}[$__rate_interval]))",
@@ -7039,7 +6957,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "sum(irate(container_network_receive_bytes_total{pod=~\"lidarr.*\"}[$__rate_interval])) * -1",
@@ -7055,7 +6973,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -7063,13 +6981,11 @@
                 "mode": "palette-classic"
               },
               "custom": {
-                "axisBorderShow": false,
                 "axisCenteredZero": false,
                 "axisColorMode": "text",
                 "axisLabel": "",
                 "axisPlacement": "auto",
                 "barAlignment": 0,
-                "barWidthFactor": 0.6,
                 "drawStyle": "line",
                 "fillOpacity": 10,
                 "gradientMode": "hue",
@@ -7078,7 +6994,6 @@
                   "tooltip": false,
                   "viz": false
                 },
-                "insertNulls": false,
                 "lineInterpolation": "linear",
                 "lineWidth": 1,
                 "pointSize": 3,
@@ -7086,7 +7001,6 @@
                   "type": "linear"
                 },
                 "showPoints": "auto",
-                "showValues": false,
                 "spanNulls": false,
                 "stacking": {
                   "group": "A",
@@ -7102,8 +7016,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7119,7 +7032,7 @@
             "h": 9,
             "w": 8,
             "x": 8,
-            "y": 186
+            "y": 200
           },
           "id": 74,
           "options": {
@@ -7130,17 +7043,15 @@
               "showLegend": false
             },
             "tooltip": {
-              "hideZeros": false,
               "mode": "single",
               "sort": "none"
             }
           },
-          "pluginVersion": "12.3.0-18186912471",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "expr": "lidarr_artists_filesize_bytes{instance=~\"${lidarr_instance}\"}",
@@ -7155,7 +7066,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "grafanacloud-prom"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -7167,9 +7078,6 @@
                 "cellOptions": {
                   "type": "auto"
                 },
-                "footer": {
-                  "reducers": []
-                },
                 "inspect": false
               },
               "mappings": [],
@@ -7177,8 +7085,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": 0
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -7218,21 +7125,29 @@
             "h": 9,
             "w": 8,
             "x": 16,
-            "y": 186
+            "y": 200
           },
           "id": 76,
           "options": {
             "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
             "frameIndex": 1,
             "showHeader": true,
             "sortBy": []
           },
-          "pluginVersion": "12.3.0-18186912471",
+          "pluginVersion": "9.5.2",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "grafanacloud-prom"
+                "uid": "Prometheus"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -7340,7 +7255,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"prowlarr_.*\"},instance)",
         "includeAll": true,
@@ -7363,7 +7278,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"sabnzbd_.*\"},instance)",
         "includeAll": true,
@@ -7386,7 +7301,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"radarr_.*\"},instance)",
         "includeAll": true,
@@ -7409,7 +7324,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"sonarr_.*\"},instance)",
         "includeAll": true,
@@ -7432,7 +7347,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"lidarr_.*\"},instance)",
         "includeAll": true,
@@ -7455,30 +7370,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "grafanacloud-prom"
-        },
-        "definition": "label_values({__name__=~\"readarr_.*\"},instance)",
-        "includeAll": true,
-        "label": "Readarr Instance",
-        "multi": true,
-        "name": "readarr_instance",
-        "options": [],
-        "query": {
-          "query": "label_values({__name__=~\"readarr_.*\"},instance)",
-          "refId": "PrometheusVariableQueryEditor-VariableQuery"
-        },
-        "refresh": 2,
-        "regex": "",
-        "type": "query"
-      },
-      {
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "grafanacloud-prom"
+          "uid": "Prometheus"
         },
         "definition": "label_values({__name__=~\"bazarr_.*\"},instance)",
         "includeAll": true,
@@ -7504,5 +7396,5 @@
   "timezone": "browser",
   "title": "Media Dashboard",
   "uid": "WURH98Y4k",
-  "version": 2
+  "version": 5
 }
